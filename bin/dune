@@ -1,0 +1,5 @@
+(executable
+ (package sandbox)
+ (public_name sandbox)
+ (name main)
+ (libraries hello practice1))
