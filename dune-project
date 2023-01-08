@@ -32,4 +32,11 @@
  (synopsis "Practice 1")
  (description "Squaresum, Fibonacci, and Euclid's Algorithm")
  (depends ocaml dune))
+
+(package
+ (name practice2)
+ (synopsis "Practice 2")
+ (description "Circle Area")
+ (depends ocaml dune))
+
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
