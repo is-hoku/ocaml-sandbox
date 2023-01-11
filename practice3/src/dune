@@ -1,0 +1,4 @@
+(library
+ (name practice3)
+ (public_name practice3)
+ (libraries practice2))

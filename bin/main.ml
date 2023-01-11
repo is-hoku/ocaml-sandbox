@@ -1,6 +1,7 @@
 open Hello
 open Practice1
 open Practice2
+open Practice3
 
 let () = Say.hello "Taro";;
 
@@ -62,3 +63,11 @@ print_string
   (if Menu.isVeggieMenu menu then "This is a vegetarian diet"
   else "This is not a vegetarian diet")
 (*This is not a vegetarian diet*)
+;;
+
+(*その 3*)
+print_newline ();;
+print_string Data.show_m_origin;;
+print_newline ();;
+print_int Data.ref_x;;
+print_newline ()

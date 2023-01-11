@@ -39,4 +39,9 @@
  (description "Circle Area")
  (depends ocaml dune))
 
+(package
+ (name practice3)
+ (synopsis "Practice 3")
+ (description "Data Structure")
+ (depends ocaml dune))
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
