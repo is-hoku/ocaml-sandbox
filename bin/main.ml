@@ -2,6 +2,7 @@ open Hello
 open Practice1
 open Practice2
 open Practice3
+open Binary_search_tree
 
 let () = Say.hello "Taro";;
 
@@ -70,4 +71,33 @@ print_newline ();;
 print_string Data.show_m_origin;;
 print_newline ();;
 print_int Data.ref_x;;
+print_newline ()
+
+(*二分探索木*)
+let t1 = Bst.Branch { left = Leaf; value = 10; right = Leaf }
+let t2 = Bst.Branch { left = Leaf; value = 25; right = Leaf }
+let t3 = Bst.Branch { left = t1; value = 15; right = t2 }
+let t4 = Bst.Branch { left = Leaf; value = 60; right = Leaf }
+let t5 = Bst.Branch { left = Leaf; value = 48; right = t4 }
+let t6 = Bst.Branch { left = t3; value = 30; right = t5 };;
+
+print_string "Find(25): ";;
+print_string (if Bst.find (t6, 25) then "Found 25!" else "Not Found 25!");;
+print_newline ();;
+print_string "Find(0): ";;
+print_string (if Bst.find (t6, 0) then "Found 0!" else "Not Found 0!");;
+print_newline ()
+
+let new_t6 = Bst.insert (t6, 1000);;
+
+print_string "Find(1000): ";;
+print_string (if Bst.find (t6, 1000) then "Found 1000!" else "Not Found 1000!")
+;;
+print_newline ();;
+print_string "Find(1000): ";;
+
+print_string
+  (if Bst.find (new_t6, 1000) then "Found 1000!" else "Not Found 1000!")
+;;
+
 print_newline ()

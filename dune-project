@@ -44,4 +44,10 @@
  (synopsis "Practice 3")
  (description "Data Structure")
  (depends ocaml dune))
+
+(package
+ (name binary_search_tree)
+ (synopsis "Binary Search Tree")
+ (description "Binary Search Tree")
+ (depends ocaml dune))
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
