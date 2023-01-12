@@ -4,6 +4,7 @@ open Practice2
 open Practice3
 open Binary_search_tree
 open Tail_recursive_function
+open Higher_order_function
 
 let () = Say.hello "Taro";;
 
@@ -104,4 +105,26 @@ print_string
 print_newline ();;
 
 (*末尾再帰*)
-print_int (Rec.sum'' (10, 0))
+print_int (Rec.sum'' (10, 0));;
+
+(*多相性*)
+print_newline ();;
+print_int (Poly_bst.size Poly_bst.t16);;
+print_string (Poly_bst.string_of_int_tree Poly_bst.t6)
+
+(*高階関数*)
+let square n = n * n;;
+
+print_newline ();;
+print_int (Func.sigma (square, 20));;
+print_newline ();;
+print_int (Func.sigma ((fun n -> n * n * n), 20));;
+
+(*カリー化*)
+print_newline ();;
+print_string (Func.greeting (Male, "Taro"));;
+print_newline ();;
+
+print_string
+  (let g1 = Func.curried_greeting Female in
+   g1 "Goro")
