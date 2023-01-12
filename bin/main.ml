@@ -3,6 +3,7 @@ open Practice1
 open Practice2
 open Practice3
 open Binary_search_tree
+open Tail_recursive_function
 
 let () = Say.hello "Taro";;
 
@@ -100,4 +101,7 @@ print_string
   (if Bst.find (new_t6, 1000) then "Found 1000!" else "Not Found 1000!")
 ;;
 
-print_newline ()
+print_newline ();;
+
+(*末尾再帰*)
+print_int (Rec.sum'' (10, 0))

@@ -1,0 +1,3 @@
+(library
+ (name tail_recursive_function)
+ (public_name tail_recursive_function))

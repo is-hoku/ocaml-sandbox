@@ -50,4 +50,10 @@
  (synopsis "Binary Search Tree")
  (description "Binary Search Tree")
  (depends ocaml dune))
+
+(package
+ (name tail_recursive_function)
+ (synopsis "Tail Recursive Function")
+ (description "Tail Recursive Functions")
+ (depends ocaml dune))
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
