@@ -1,3 +1,4 @@
 (library
  (public_name higher_order_function)
- (name higher_order_function))
+ (name higher_order_function)
+ (libraries binary_search_tree))
