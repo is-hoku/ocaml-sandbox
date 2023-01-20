@@ -48,7 +48,7 @@
 (package
  (name binary_search_tree)
  (synopsis "Binary Search Tree")
- (description "Binary Search Tree")
+ (description "Binary Search Trees")
  (depends ocaml dune))
 
 (package
@@ -61,5 +61,11 @@
  (name higher_order_function)
  (synopsis "Higher Order Function")
  (description "Higher Order Functions")
+ (depends ocaml dune))
+
+(package
+ (name poly_bst)
+ (synopsis "Polymorphic Binary Search Tree")
+ (description "Polymorphic Binary Search Trees")
  (depends ocaml dune))
 ; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project
