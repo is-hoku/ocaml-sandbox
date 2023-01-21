@@ -4,7 +4,7 @@ open Practice2
 open Practice3
 open Binary_search_tree
 open Tail_recursive_function
-open Higher_order_function
+open Higher_order_function.Func
 
 let () = Say.hello "Taro";;
 
@@ -135,5 +135,6 @@ print_string "Find(120): ";
 print_string
   (if Bst.find (Func.treemap (fun n -> n * 2) t6, 120) then "Found 120"
   else "Not Found 120");
-print_newline ();
-print_int (Func.treefold 0 (fun l v r -> l + v + r) t6)
+print_newline ()
+(*print_int (Func.treefold 0 (fun l v r -> l + v + r) t6)*)
+(*↑ mli で定義していないため公開されない*)
